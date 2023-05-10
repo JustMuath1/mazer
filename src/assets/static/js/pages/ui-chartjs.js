@@ -352,20 +352,20 @@ var myline = new Chart(line, {
   type: "line",
   data: {
     labels: [
-      "16-07-2018",
-      "17-07-2018",
-      "18-07-2018",
-      "19-07-2018",
-      "20-07-2018",
-      "21-07-2018",
-      "22-07-2018",
-      "23-07-2018",
-      "24-07-2018",
-      "25-07-2018",
+      "16-07-2023",
+      "17-07-2023",
+      "18-07-2023",
+      "19-07-2023",
+      "20-07-2023",
+      "21-07-2023",
+      "22-07-2023",
+      "23-07-2023",
+      "24-07-2023",
+      "25-07-2023",
     ],
     datasets: [
       {
-        label: "Balance",
+        label: "Job Satisfaction",
         data: [50, 25, 61, 50, 72, 52, 60, 41, 30, 45],
         backgroundColor: "rgba(50, 69, 209,.6)",
         borderWidth: 3,
@@ -377,7 +377,7 @@ var myline = new Chart(line, {
         pointHoverBackgroundColor: "rgba(63,82,227,1)",
       },
       {
-        label: "Balance",
+        label: "Work-Life Balance",
         data: [20, 35, 45, 75, 37, 86, 45, 65, 25, 53],
         backgroundColor: "rgba(253, 183, 90,.6)",
         borderWidth: 3,
@@ -434,6 +434,19 @@ var myline = new Chart(line, {
     },
   },
 })
+document.getElementById('changeDataButton').addEventListener('click', function() {
+  // Code to change the dataset numbers
+});
+document.getElementById('changeDataButton').addEventListener('click', function() {
+  // Change the dataset numbers
+  var newData = [60, 30, 50, 70, 40, 80, 35, 55, 25, 50];
+  myline.data.datasets[0].data = newData;
+
+  // Update the chart
+  myline.update();
+});
+
+
 
 // let ctx1 = document.getElementById("canvas1").getContext("2d");
 // let ctx2 = document.getElementById("canvas2").getContext("2d");
