@@ -1,0 +1,220 @@
+{% set title = 'Employee' %}
+{% set filename = 'employee.html' %}
+
+{% extends 'src/layouts/master.html' %}
+{% block styles %}
+<link rel="stylesheet" href="/assets/scss/iconly.scss">
+{% endblock %}
+
+{% block content %}
+<div class="alert alert-danger"><i class="fa fa-info-circle"></i>Attention is required, the employee is at risk of reaching the point of no return, which could lead to costly turnover for the company.
+</div>
+<div class="page-heading">
+  <div class="page-title">
+    <div class="row">
+      <div class="col-12 col-md-6 order-md-1 order-last">
+        <h3>Employee Status</h3>
+        <p class="text-subtitle text-muted">the employee's current status, salary details, as well as their absence and vacation records.</p>
+      </div>
+      <div class="col-12 col-md-6 order-md-2 order-first">
+        <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="table-datatable.html">Employees</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Employee #1234567</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="row">
+      <div class="card">
+        <div class="card-body py-4 px-4">
+          <div class="d-flex align-items-center">
+            <div class="avatar avatar-xl">
+              <img src="assets/static/images/faces/1.jpg" alt="Face 1">
+            </div>
+            <div class="ms-3 name">
+              <h5 class="font-bold">Thamer Alluqmani</h5>
+              <h6 class="text-muted mb-0">Software Engineer</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            <h4>Suggestions To help employee</h4>
+          </div>
+          <div class="card-body">
+            <p>Here are three possible suggestions to help employees stay with the company:</p>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span class="bg-success rounded text-white px-2 py-1 me-2">93% Matched</span>
+                    Offer career development opportunities
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      Employees are more likely to stay with a company if they feel like there are opportunities for growth and advancement. You can offer training programs, mentorship opportunities, and career planning sessions to help employees develop their skills and plan their career paths within the company.
+                    </p>
+
+                    <!--                                        <div class="row">-->
+                    <!--                                            <div class="col-md-6">-->
+                    <!--                                                <p>Best Choice</p>-->
+                    <!--                                            </div>-->
+                    <!--                                            <div class="col-md-6">-->
+                    <!--                                                <div class="progress progress-success  mb-4">-->
+                    <!--                                                    <div class="progress-bar progress-label" role="progressbar" style="width: 93%" aria-valuenow="93"-->
+                    <!--                                                         aria-valuemin="0" aria-valuemax="100"></div>-->
+                    <!--                                                </div>-->
+                    <!--                                            </div>-->
+
+                    <!--                                        </div>-->
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <span class="bg-warning rounded text-white px-2 py-1 me-2">50% Matched</span>
+
+                    Employee engagement
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    People want to feel included. Give employees opportunities to contribute to company decision-making. Allow employees to make suggestions or implement changes. If employees feel needed and that their ideas are heard, they will more likely stay in their jobs.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <span class="bg-danger rounded text-white px-2 py-1 me-2">20% Matched</span>
+                    Internal Mobility Opportunities
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Encourage employees to explore opportunities for growth and development within the organization by moving to another department or team. This can provide them with fresh challenges, expand their skill set, and increase job satisfaction. Support and facilitate internal mobility by offering clear pathways for career progression and providing resources for employees to explore different roles.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body px-4 py-4-5">
+            <div class="row">
+              <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                <div class="stats-icon purple mb-2">
+                  <i class="iconly-boldAdd-User"></i>
+                </div>
+              </div>
+              <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                <h6 class="text-muted font-semibold">Current Salary</h6>
+                <h6 class="font-extrabold mb-0">7,000.00 SR</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body px-4 py-4-5">
+            <div class="row">
+              <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                <div class="stats-icon green mb-2">
+                  <i class="iconly-boldAdd-User"></i>
+                </div>
+              </div>
+              <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                <h6 class="text-muted font-semibold">Bounce</h6>
+                <h6 class="font-extrabold mb-0">2,000.00 SR</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body px-4 py-4-5">
+            <div class="row">
+              <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                <div class="stats-icon blue mb-2">
+                  <i class="iconly-boldProfile"></i>
+                </div>
+              </div>
+              <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                <h6 class="text-muted font-semibold">vacations</h6>
+                <h6 class="font-extrabold mb-0">5 days</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body px-4 py-4-5">
+            <div class="row">
+              <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                <div class="stats-icon red mb-2">
+                  <i class="iconly-boldShow"></i>
+                </div>
+              </div>
+              <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                <h6 class="text-muted font-semibold">Warnings</h6>
+                <h6 class="font-extrabold mb-0">2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="card h-100">
+          <div class="card-header">
+            <h4>Tasks Chart</h4>
+          </div>
+          <div class="card-body">
+            <div id="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card h-100" >
+          <div class="card-header">
+            <h4>Employee status</h4>
+          </div>
+          <div class="card-body">
+            <div id="radialGradient"></div>
+          </div>
+          <div class="card-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="assets/extensions/dayjs/dayjs.min.js"></script>
+<script src="assets/extensions/apexcharts/apexcharts.min.js"></script>
+<script src="assets/static/js/pages/ui-apexchart.js"></script>
+{% endblock %}
