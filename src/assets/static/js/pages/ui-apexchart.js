@@ -1,16 +1,16 @@
 var lineOptions = {
-  chart: {
-    type: "line",
-  },
-  series: [
-    {
-      name: "Tasks",
-      data: [125, 91, 70, 60, 49, 50, 35, 40, 30]
+    chart: {
+        type: "line",
     },
-  ],
-  xaxis: {
-    categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-  },
+    series: [
+        {
+            name: "Tasks",
+            data: [125, 91, 70, 60, 49, 50, 35, 40, 30]
+        },
+    ],
+    xaxis: {
+        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    },
 }
 var candleOptions = {
     series: [
@@ -432,7 +432,11 @@ var radialGradientOptions = {
             opacityTo: 1,
             stops: [0, 100],
         },
-    }
+    },
+    stroke: {
+        lineCap: "round",
+    },
+    labels: ["Not happy"],
 }
 var areaOptions = {
     series: [

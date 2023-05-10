@@ -402,7 +402,12 @@
     </section>
 </div>
 <script>
-
+    document.querySelector("button").addEventListener("click", function() {
+        var linkTextarea = document.querySelector("textarea");
+        linkTextarea.select();
+        document.execCommand("copy");
+        alert("Link copied to clipboard!");
+    });
 </script>
 {% endblock %}
 {% block styles %}
