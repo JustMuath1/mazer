@@ -4,12 +4,12 @@ var lineOptions = {
   },
   series: [
     {
-      name: "sales",
-      data: [30, 40, 35, 50, 49, 60, 70, 91, 125],
+      name: "Tasks",
+      data: [125, 91, 70, 60, 49, 50, 35, 40, 30]
     },
   ],
   xaxis: {
-    categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+    categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
   },
 }
 var candleOptions = {
@@ -426,8 +426,8 @@ var radialGradientOptions = {
       shade: "dark",
       type: "horizontal",
       shadeIntensity: 0.5,
-      gradientToColors: ["#ABE5A1"],
-      inverseColors: true,
+      gradientToColors: ["#a90000"],
+      inverseColors: false,
       opacityFrom: 1,
       opacityTo: 1,
       stops: [0, 100],
@@ -436,7 +436,7 @@ var radialGradientOptions = {
   stroke: {
     lineCap: "round",
   },
-  labels: ["Percent"],
+  labels: ["Not happy"],
 }
 var areaOptions = {
   series: [
@@ -509,8 +509,8 @@ var bar = new ApexCharts(document.querySelector("#bar"), barOptions)
 var line = new ApexCharts(document.querySelector("#line"), lineOptions)
 var candle = new ApexCharts(document.querySelector("#candle"), candleOptions)
 var radialGradient = new ApexCharts(
-  document.querySelector("#radialGradient"),
-  radialGradientOptions
+    document.querySelector("#radialGradient"),
+    radialGradientOptions
 )
 var area = new ApexCharts(document.querySelector("#area"), areaOptions)
 
