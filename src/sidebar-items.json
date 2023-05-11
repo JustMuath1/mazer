@@ -7,5 +7,10 @@
     "name": "Employees",
     "url": "index.html",
     "icon": "people-fill"
+  },
+  {
+    "name": "Pulse Surveys",
+    "url": "table.html",
+    "icon": "people-fill"
   }
 ]
