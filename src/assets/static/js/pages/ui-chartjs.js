@@ -352,24 +352,15 @@ var myline = new Chart(line, {
   type: "line",
   data: {
     labels: [
-      "16-07-2023",
-      "17-07-2023",
-      "18-07-2023",
-      "19-07-2023",
-      "20-07-2023",
-      "21-07-2023",
-      "22-07-2023",
-      "23-07-2023",
-      "24-07-2023",
-      "25-07-2023",
+      "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
     ],
     datasets: [
       {
-        label: "Job Satisfaction",
-        data: [50, 25, 61, 50, 72, 52, 60, 41, 30, 45],
-        backgroundColor: "rgba(50, 69, 209,.6)",
+        label: "Engineering",
+        data: [90, 50, 70, 40, 46, 42, 39, 41, 30, 25,20, 15],
+        backgroundColor: "rgba(61,209,50,0.6)",
         borderWidth: 3,
-        borderColor: "rgba(63,82,227,1)",
+        borderColor: "rgba(61,209,50,0.6)",
         pointBorderWidth: 0,
         pointBorderColor: "transparent",
         pointRadius: 3,
@@ -377,11 +368,35 @@ var myline = new Chart(line, {
         pointHoverBackgroundColor: "rgba(63,82,227,1)",
       },
       {
-        label: "Work-Life Balance",
-        data: [20, 35, 45, 75, 37, 86, 45, 65, 25, 53],
+        label: "Marketing",
+        data: [20, 35, 45, 75, 37, 86, 45, 65, 25, 53, 65, 45],
         backgroundColor: "rgba(253, 183, 90,.6)",
         borderWidth: 3,
         borderColor: "rgba(253, 183, 90,.6)",
+        pointBorderWidth: 0,
+        pointBorderColor: "transparent",
+        pointRadius: 3,
+        pointBackgroundColor: "transparent",
+        pointHoverBackgroundColor: "rgba(63,82,227,1)",
+      },
+      {
+        label: "Finance",
+        data: [60, 50, 70, 90, 80, 89, 90, 91, 85, 86, 87, 88],
+        backgroundColor: "rgba(90,136,253,0.6)",
+        borderWidth: 3,
+        borderColor: "rgba(90,136,253,0.6)",
+        pointBorderWidth: 0,
+        pointBorderColor: "transparent",
+        pointRadius: 3,
+        pointBackgroundColor: "transparent",
+        pointHoverBackgroundColor: "rgba(63,82,227,1)",
+      },
+      {
+        label: "Human Resources",
+        data: [10, 55, 45, 75, 60, 86, 45, 25, 45, 53, 45, 55],
+        backgroundColor: "rgba(253,90,245,0.6)",
+        borderWidth: 3,
+        borderColor: "rgba(253,90,245,0.6)",
         pointBorderWidth: 0,
         pointBorderColor: "transparent",
         pointRadius: 3,
@@ -439,7 +454,7 @@ document.getElementById('changeDataButton').addEventListener('click', function()
 });
 document.getElementById('changeDataButton').addEventListener('click', function() {
   // Change the dataset numbers
-  var newData = [60, 30, 50, 70, 40, 80, 35, 55, 25, 50];
+  var newData = [60, 30, 50, 70, 40, 80, 35, 55, 25, 50, 60, 70];
   myline.data.datasets[0].data = newData;
 
   // Update the chart

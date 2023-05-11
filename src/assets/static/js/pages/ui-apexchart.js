@@ -516,6 +516,7 @@ var area = new ApexCharts(document.querySelector("#area"), areaOptions)
 
 area.render()
 radialGradient.render()
+
 candle.render()
 bar.render()
 line.render()
